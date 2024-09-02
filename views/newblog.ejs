@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <div id="main-div">
+      <h1>New blog page</h1>
+      <form action="/blogs" method="post">
+        <label>Blog Title</label><br />
+        <input type="text" name="title"/>
+
+        <br /><br />
+        <label>View Summary</label><br />
+        <input type="text" name="summary"/>
+
+        <br /><br />
+        <label>Contact</label><br />
+        <input type="text" name="contact"/>
+
+        <br /><br />
+        <label>Author</label><br />
+        <input type="text" name="author"/>
+        <br />
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <%- include('partials/footer')%>
+</body>
+

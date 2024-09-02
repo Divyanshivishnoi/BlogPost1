@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<%-include('partials/head')%>
+<body>
+   <%-include('partials/header')%> 
+   <main>
+    <div id="main-div">
+        <h1>About page</h1>
+        <p id="para-inside-main">
+          This website is currently being built up by the students of MIT, Moradabad
+         </p>
+         <% for (let i = 0; i < blogs.length; i++) { %>
+            <a style="color: black" href="/about/id/<%= blogs[i].id %>"
+              ><h1><%= blogs[i].fname %></h1></a
+            >
+            <h2><%= blogs[i].lname %></h2>
+            <h3><%= blogs[i].shortBio %></h3>
+            <br />
+            <br />
+            <% } %>
+          </div>
+        </main>
+      <%- include('partials/footer') %>
+</body>
+</html>
+
+
